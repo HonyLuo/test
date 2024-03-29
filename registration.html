@@ -1,0 +1,61 @@
+
+以下是三个网页的简要代码，分别为測驗首页、报名页面和重新測驗页面。
+
+測驗首页（index.html）：
+html
+Copy code
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>防暴小測驗 - 有你來相見</title>
+</head>
+<body>
+  <h1>防暴小測驗</h1>
+  <p>測驗達80分以上可報名，若未達80分將自動重新再來一次。</p>
+  <a href="quiz.html">開始測驗</a>
+</body>
+</html>
+測驗页面（quiz.html）：
+html
+Copy code
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>防暴小測驗 - 測驗中</title>
+</head>
+<body>
+  <h2>防暴小測驗</h2>
+  <!-- 这里放置你的測驗問題 -->
+  <form action="submit.php" method="post">
+    <!-- 这里放置測驗問題的表單 -->
+    <button type="submit">提交測驗</button>
+  </form>
+</body>
+</html>
+报名页面（registration.html）：
+html
+Copy code
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>防暴小測驗 - 報名</title>
+</head>
+<body>
+  <h2>報名</h2>
+  <form action="submit_registration.php" method="post">
+    <label for="name">姓名：</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="phone">手機：</label>
+    <input type="text" id="phone" name="phone" required><br>
+    <label for="email">電子信箱：</label>
+    <input type="email" id="email" name="email" required><br>
+    <button type="submit">提交報名</button>
+  </form>
+</body>
+</html>
